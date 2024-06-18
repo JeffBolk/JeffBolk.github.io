@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js"></script>
+        
+        <title>Contact Me</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="break">Welcome to My Portfolio</div>
+
+        <nav class="navigation-bar">
+            <div id="nav-image"><img src="images/nav-logo.png" id="logo" alt="An ePortfolio Logo"></div>
+
+            <div class="page-links">
+                <a href="index.html" class="page-links">Home</a>
+            </div>
+            
+            <div class="page-links">
+            <a href="aboutme.html" class="page-links">About Me</a>
+            </div>
+
+            <div class="page-links">
+            <a href="hobbies.html" class="page-links">Hobbies</a>
+            </div>
+
+            <div class="page-links">
+            <a href="myhouse.html" class="page-links">My House</a>
+            </div>
+
+            <div class="page-links">
+            <a href="contactme.html" class="page-links" id="contact-me">Contact Me</a>
+            </div>
+
+        </nav>
+        
+
+        <header> 
+            <p></p>   
+            <h3>CONTACT ME</h3>
+        </header>
+
+        <section id="form-holder">
+            <form>
+                <div class="form-element">
+                    <label for="first-name"><h3>First Name</h3></label>
+                    <hr>
+                    <input type="text" id="first-name" name="first-name" placeholder="Jane" required>
+                </div>
+                <div class="form-element">
+                    <label for="email"><h3>Email</h3></label>
+                    <hr>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-element">
+                    <label for="subject"><h3>Subject</h3></label>
+                    <hr>
+                    <input type="text" id="subject" name="subject" placeholder="Tech Support" required>
+                </div>
+                <div class="form-element">
+                    <label for="inquiry-body"><h3>Inquiry</h3></label>
+                    <hr>
+                    <textarea id="inquiry-body" name="inquiry-body" rows="3" cols="30" required maxlength="200">Hi! My name is...</textarea>
+                    <button id="submit" disabled>submit</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <table class="subject">
+                <tr>
+                    <td>Name:</td>
+                    <td>Jeffrey Bolk</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><a href="mailto:tljbolk889@virtuallearning.ca">tljbolk889@virtuallearning.ca</a></td>
+                    <!-- From W3Schools -->
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>Lansdowne</td>
+                </tr>
+                <tr>
+                    <td>Modified&emsp;</td>
+                    <td>06/14/2024</td>
+                </tr>
+                
+            </table>
+            <hr>
+        </footer>
+
+    </body>
+</html>
+
+

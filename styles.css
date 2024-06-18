@@ -1,0 +1,426 @@
+* {
+    font-family: 'PT Sans' Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FEFCFC;
+}
+
+.break {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 5px 5px -5px rgb(122, 122, 122);
+    min-height: 60px;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    margin: 7px 5px 3px 5px;
+
+}
+
+.page-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5px;
+    padding: 10px 0px;
+    margin: 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+}
+
+.page-links:nth-child(6) {
+    padding-right: 10px
+}
+
+.page-links:hover {
+    color: gray;
+}
+
+#home-in-nav, #about-me, #hobbies, #contact-me, #my-house{
+    color: #D62828;
+}
+
+header h3{
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    font-family: 'Kode Mono';
+}
+
+header p {
+    height: 10px;
+    background-color: white;
+    margin: 0;
+}
+
+footer {
+    min-height: 100px;
+    background-color: #003049;
+    color: white;
+    padding: 40px 40px 20px;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    color: #F77F00;
+}
+
+/* HOME */
+
+#kingston-img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#kingston-img-alt {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#img {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;    
+    z-index: -1;
+    display: none;
+    
+}
+
+#img-alt {
+    height: 600px;  
+    align-items: center;
+    z-index: -1;
+    object-fit: contain;
+    position: absolute;
+
+}
+
+.page-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+    margin: 0 0 48px;
+    object-fit: cover;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.712);
+    font-size: 12px;
+    border-radius: 2px;
+    transition: all 800ms ease-in-out;
+    font-weight: bold;
+
+}
+
+.content-block:hover {
+    border: 2px dotted #D62828;
+    width: 175px;
+    height: 175px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #003049;
+    
+}
+
+.content-block-links {
+    text-decoration: none;
+    color: black;
+}
+
+.content-block button {
+    color: #F77F00;
+    background-color: inherit;
+    border: 1px dashed #F77F00;
+    width: 120px;
+    height: 30px;
+}
+
+.content-block button h3 {
+    margin: 0;
+}
+
+#cookies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #e0ae49;
+    max-width: 300px;
+    min-height: 120px;
+    border-radius: 5px;
+    text-align: center;
+    transition: border 800ms ease-in-out;
+    box-shadow: 0px 5px 5px -5px rgb(122, 122, 122);
+    margin-left: 20px;
+}
+
+#cookies:hover {
+    border: 3px solid black;
+}
+
+#cookies span:nth-child(even) {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: #D62828;
+}
+
+#check-image {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 1px solid transparent;
+    transition: border 500ms ease-in-out;
+}
+
+#check-image:hover {
+    border: 1px solid black;
+}
+
+/* About Me, Hobbies, and My House */
+
+.left-article, .right-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 20px;
+    background-color: #003049;
+    border-radius: 2px;
+    padding: 0 20px;
+    width: auto;
+    transition: all 2s ease-in-out;
+}
+
+.article {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    max-width: 600px;
+    font-size: 16;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FEFCFC;
+    transition: all 1s ease-in-out;
+}
+
+.article hr {
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+.article:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+    font-size: 20px;
+    padding: 20px;
+
+    hr {
+        width: 80%;
+    }
+}
+
+#selfie-holder, #family-holder, #home-picture, #home-video, #farm-holder, #lego-holder{
+    background-color: white;
+    max-width: 600px;
+    max-height: 400px;
+    min-width: 150px;
+    min-height: 150px;
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+#selfie-holder {
+    background-image: url("1.selfie.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#family-holder {
+    background-image: url("2.family.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#home-picture {
+    background-image: url("3.home-picture.jpg");
+    /* From: https://www.1000islandsplayhouse.com/a-moonlit-night/ */
+    background-position: center;
+    background-size: cover;
+}
+#farm-holder {
+    background-image: url("4.farm-picture.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#lego-holder {
+    background-image: url("5.lego-picture.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Forms */
+
+#form-holder {
+    background-image: url("6.form-image.jpg");
+    /* Image is from Ivan Karpov on Unsplash. This image is free to use*/
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px;
+    padding: 0 10px;
+    background-color: #003049;
+}
+
+.form-element {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-element hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-element h3 {
+    margin-bottom: 0;
+}
+
+#form-holder, form .form-element{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-name, #email, #subject, #inquiry-body, #submit {
+    background-color: inherit;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#inquiry-body {
+    max-width: 350px;
+    max-height: 500px;
+    min-height: 20px;
+    min-width: 50px;
+}
+
+#submit {
+    margin-top: 40px;
+    font-size: 16px;
+    padding: 10px 20px !important;
+    transition: all 500ms ease-in-out;
+}
+
+#submit:hover {
+    border: 2px solid #003049; 
+}
+
+/* Media Queries */
+
+@media (width >= 830px) {
+    .page-links:nth-child(6) {
+        padding-right: 100px;
+    }
+}
+
+@media (width >= 450px) {
+
+    #img-alt {
+        display: none;
+    }
+    #img {
+        display: inherit;
+    }
+
+    header h3 {
+        padding: 40px;
+        font-size: 30px;
+    }
+
+    #logo {
+        margin-right: auto;
+    }
+    
+    .page-links:nth-child(6) {
+        padding-right: 50px
+    }
+
+    .left-article, .right-article {
+        margin: 50px 50px;
+        padding: 20px;
+    }
+    
+    #selfie-holder, #family-holder, #home-picture, #home-video, #farm-holder, #lego-holder{
+    min-width: 350px;
+    min-height: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #logo {
+        display: none;
+    }
+}
+
